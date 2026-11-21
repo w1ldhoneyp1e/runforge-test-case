@@ -1,0 +1,162 @@
+.sidebar {
+	position: fixed;
+	inset: 0 auto 0 0;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	width: 224px;
+	background: #f5f3ee;
+	border-right: 1px solid #ddd9d1;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	min-height: 80px;
+	padding: 16px 20px;
+	color: #14223a;
+	text-decoration: none;
+	border-bottom: 1px solid #e4dfd7;
+}
+
+.avatar {
+	display: grid;
+	flex: none;
+	place-items: center;
+}
+
+.logo {
+	display: block;
+	flex: none;
+	width: 36px;
+	height: 36px;
+}
+
+.brandText, .userText {
+	display: grid;
+	gap: 3px;
+	min-width: 0;
+}
+
+.brandText strong {
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.brandText small, .userText small {
+	color: #716e67;
+	font-size: 12px;
+	line-height: 1.2;
+}
+
+.navigation {
+	flex: 1;
+	padding: 20px 12px;
+}
+
+.activeLink {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	padding: 12px;
+	border-radius: 8px;
+	background: #e7eef9;
+	color: #172c4d;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.runIcon {
+	color: #31567e;
+	font-size: 16px;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0 12px;
+	padding: 18px 8px;
+	border-top: 1px solid #ddd9d1;
+}
+
+.avatar {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: #e4eefb;
+	color: #365176;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.userText strong {
+	color: #26354a;
+	font-size: 13px;
+}
+
+@media (max-width: 760px) {
+
+	.sidebar {
+		width: 176px;
+	}
+
+	.brand {
+		padding-inline: 14px;
+	}
+}
+
+@media (max-width: 460px) {
+
+	.sidebar {
+		width: 132px;
+	}
+
+	.brand {
+		gap: 7px;
+		padding-inline: 10px;
+	}
+
+	.logo {
+		width: 28px;
+		height: 28px;
+	}
+
+	.brandText strong {
+		font-size: 13px;
+	}
+
+	.brandText small {
+		font-size: 11px;
+	}
+
+	.navigation {
+		padding-inline: 8px;
+	}
+
+	.activeLink {
+		padding-inline: 9px;
+	}
+
+	.user {
+		gap: 6px;
+		margin-inline: 8px;
+		padding-inline: 2px;
+	}
+
+	.avatar {
+		width: 28px;
+		height: 28px;
+		font-size: 10px;
+	}
+
+	.userText strong {
+		font-size: 11px;
+	}
+
+	.userText small {
+		font-size: 11px;
+	}
+}

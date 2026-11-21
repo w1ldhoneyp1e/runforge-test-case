@@ -1,0 +1,63 @@
+.heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 8px;
+}
+
+.heading h3 {
+	margin: 0;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.message {
+	color: #626d7c;
+	font-size: 12px;
+}
+
+.copyButton {
+	display: grid;
+	place-items: center;
+	width: 34px;
+	height: 34px;
+	border: 1px solid #ded9d1;
+	border-radius: 7px;
+	background: #fff;
+	color: #304762;
+	cursor: pointer;
+}
+
+.copyButton:hover {
+	background: #f3f1ec;
+}
+
+.copyButton:focus-visible,
+.logs:focus-visible {
+	outline: 2px solid #6984a4;
+	outline-offset: 2px;
+}
+
+.copyButton svg {
+	width: 17px;
+	height: 17px;
+}
+
+.logs {
+	max-height: min(35vh, 300px);
+	min-height: 70px;
+	margin: 0;
+	overflow: auto;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	border-radius: 7px;
+	padding: 13px;
+	background: #10213d;
+	color: #d9e7fa;
+	font: 14px/1.7 ui-monospace, monospace;
+}
